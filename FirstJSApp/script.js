@@ -1,2 +1,3 @@
-let myName = "Michael";
-console.log("Hello my name is " + myName)
+let happy = true;
+let fun = true;
+console.log(happy && fun);
