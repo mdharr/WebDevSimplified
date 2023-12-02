@@ -22,10 +22,62 @@
 //     console.log(variable);
 // }
 
-function greeting(name, callback) {
-    callback("Hello " + name);
-}
+// function greeting(name, callback) {
+//     callback("Hello " + name);
+// }
 
-greeting("Michael", function (variable) {
-    console.log(variable);
-});
+// greeting("Michael", function (variable) {
+//     console.log(variable);
+// });
+
+// function sum(a,b) {
+//     return a + b;
+// }
+
+// let sumArrow = (a, b) => {
+//     return a + b;
+// }
+
+// console.log(sumArrow(1,2));
+
+// function printName(name) {
+//     console.log(name);
+// }
+
+// let printNameArrow = (name) => {
+//     console.log(name);
+// }
+
+// printNameArrow("Michael");
+
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// let sumArrow = (a, b) => a + b;
+
+// console.log(sumArrow(1,2));
+
+// function printHi(name) {
+//     return "Hi " + name;
+// }
+
+// let printHiArrow = (name) => "Hi " + name;
+
+// console.log(printHiArrow("Michael"));
+
+// let hi = () => console.log("Hi");
+
+// hi();
+
+// function func(x, callback) {
+//     callback(x);
+// }
+
+// func(10, function(variable) {
+//     console.log(variable);
+// });
+
+let func = (x, callback) => callback(x);
+
+func(10, (variable) => console.log(variable));
