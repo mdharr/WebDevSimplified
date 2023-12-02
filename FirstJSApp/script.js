@@ -1,24 +1,31 @@
-// Create a function that takes one argument (persons name) and prints that out
-// function printName(name, age) {
-//     console.log(name);
-//     console.log(age);
+// function printVariable(variable) {
+//     console.log(variable);
 // }
 
-// printName("Albert", 35);
-
-// function sum(a, b) {
-//     return a + b;
+// function func(x) {
+//     x("hello world");
 // }
 
-// let s = sum(1, 2);
-// let sum2 = sum(2, s);
-// console.log(s);
-// console.log(sum2);
+// func(printVariable);
 
-function concatStrings(name) {
-    return "Hello " + name;
+// function sumCallback(a, b, callback) {
+//     callback(a + b);
+// }
+
+// function handleSum(sum) {
+//     console.log(sum);
+// }
+
+// sumCallback(1, 2, handleSum);
+
+// function printVariable(variable) {
+//     console.log(variable);
+// }
+
+function greeting(name, callback) {
+    callback("Hello " + name);
 }
 
-let result = concatStrings("Mordecai")
-
-console.log(result);
+greeting("Michael", function (variable) {
+    console.log(variable);
+});
