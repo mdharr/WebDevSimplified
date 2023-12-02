@@ -1,28 +1,24 @@
-let a = 1;
+// Create a function that takes one argument (persons name) and prints that out
+// function printName(name, age) {
+//     console.log(name);
+//     console.log(age);
+// }
 
-console.log(a);
+// printName("Albert", 35);
 
-let b = 2;
+// function sum(a, b) {
+//     return a + b;
+// }
 
-console.log(b);
+// let s = sum(1, 2);
+// let sum2 = sum(2, s);
+// console.log(s);
+// console.log(sum2);
 
-let zzzzzz = 1000000;
+function concatStrings(name) {
+    return "Hello " + name;
+}
 
-console.log(zzzzzz);
+let result = concatStrings("Mordecai")
 
-b = 2;
-c = 3;
-
-// Print out a + b
-console.log(a+b);
-
-// this is a single line comment
-
-/*
-this
-is
-a
-multi
-line
-comment
-*/
+console.log(result);
