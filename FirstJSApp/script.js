@@ -1,3 +1,3 @@
 let a = null;
-
-console.log(typeof a);
+let b = undefined;
+console.log(a == b);
