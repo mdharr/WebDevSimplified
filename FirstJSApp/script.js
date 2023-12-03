@@ -119,22 +119,22 @@
 // sayHi("Michael");
 // console.log(result);
 
-let c = 3;
+// let c = 3;
 
-{
-    let a = 1;
+// {
+//     let a = 1;
 
-    {
-        let b = 2;
-        console.log(a);
-        console.log(b);
-        console.log(c);
-    }
-}
+//     {
+//         let b = 2;
+//         console.log(a);
+//         console.log(b);
+//         console.log(c);
+//     }
+// }
 
-function sum(a, b) {
-    console.log(a + b);
-}
+// function sum(a, b) {
+//     console.log(a + b);
+// }
 
 // {
 //     let a = 2;
@@ -148,3 +148,29 @@ function sum(a, b) {
 
 // let a = 4;
 // console.log(a);
+
+let a = 15;
+
+{
+    let b = 22;
+    sum(a, b);
+    // sumArrow(a, b);
+}
+
+// let sumArrow = (a, b) => console.log(a + b);
+
+function sum(a, b) {
+    console.log(a + b);
+}
+
+function greeting(name) {
+    console.log("Good morning " + name);
+}
+
+let myName = "Aaron Zhou";
+
+greeting(myName);
+
+
+
+
