@@ -213,4 +213,27 @@
 
 // console.log(a);
 
+// number
+// string 
+// boolean 
+// null 
+// undefined 
 
+// let a = "1";
+// console.log("Before: " + typeof a);
+
+// console.log(parseInt(a));
+
+// console.log("After: " + typeof parseInt(a));
+
+// let b = "1.3";
+// console.log("Parsed float: " + parseFloat(b));
+
+// let a = 1.34;
+
+// console.log(typeof a.toString());
+
+let a = 1;
+const b = "Hello";
+
+console.log(b + a);
