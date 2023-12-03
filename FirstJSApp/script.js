@@ -78,6 +78,25 @@
 //     console.log(variable);
 // });
 
-let func = (x, callback) => callback(x);
+// let func = (x, callback) => callback(x);
 
-func(10, (variable) => console.log(variable));
+// func(10, (variable) => console.log(variable));
+
+function doStuff(a, b, name) {
+    print(sum(a, b));
+    print(sayHi(name));
+}
+
+function print(variable) {
+    console.log(variable);
+}
+
+function sum(a, b) {
+    return a + b;
+}
+
+function sayHi(name) {
+    return "Hi " + name;
+}
+
+doStuff(1, 2, "Michael");
