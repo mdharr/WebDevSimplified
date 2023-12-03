@@ -101,10 +101,50 @@
 
 // doStuff(1, 2, "Michael");
 
-console.log(sum(1, 2));
+// console.log(sum(1, 2));
 
-function sum(a, b) {
-    return a + b;
-}
+// function sum(a, b) {
+//     return a + b;
+// }
 
 // let sum = (a, b) => a + b;
+
+// function sayHi(name) {
+//     let a = 2;
+//     let result = "Hi " + name + a;
+//     console.log(result);
+// }
+
+// let a = 1;
+// sayHi("Michael");
+// console.log(result);
+
+let c = 3;
+
+{
+    let a = 1;
+
+    {
+        let b = 2;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+}
+
+function sum(a, b) {
+    console.log(a + b);
+}
+
+// {
+//     let a = 2;
+//     console.log(a);
+// }
+
+// {
+//     let a = 3;
+//     console.log(a);
+// }
+
+// let a = 4;
+// console.log(a);
