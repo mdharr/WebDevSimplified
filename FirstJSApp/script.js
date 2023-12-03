@@ -193,12 +193,24 @@
 // let result = greeting("Michael");
 // result("Aaron");
 
-let a = 1;
-const b = 2;
+// let a = 1;
+// const b = 2;
 
-a = 2;
+// a = 2;
 
-console.log(a);
+// console.log(a);
 
+// {
+//     var a = 1;
+
+// }
+
+// console.log(a);
+
+// console.log(a);
+
+// var a = 1;
+
+// console.log(a);
 
 
