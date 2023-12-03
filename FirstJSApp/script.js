@@ -149,28 +149,39 @@
 // let a = 4;
 // console.log(a);
 
-let a = 15;
+// let a = 15;
 
-{
-    let b = 22;
-    sum(a, b);
-    // sumArrow(a, b);
-}
+// {
+//     let b = 22;
+//     sum(a, b);
+//     sumArrow(a, b);
+// }
 
 // let sumArrow = (a, b) => console.log(a + b);
 
-function sum(a, b) {
-    console.log(a + b);
+// function sum(a, b) {
+//     console.log(a + b);
+// }
+
+// function greeting(name) {
+//     console.log("Good morning " + name);
+// }
+
+// let myName = "Aaron Zhou";
+
+// greeting(myName);
+
+function print(variable) {
+    let c = 3;
+    return function func(variable2) {
+        console.log(variable);
+        console.log(variable2);
+        console.log(c);
+    }
 }
 
-function greeting(name) {
-    console.log("Good morning " + name);
-}
-
-let myName = "Aaron Zhou";
-
-greeting(myName);
-
+let a = print(1);
+a(2);
 
 
 
