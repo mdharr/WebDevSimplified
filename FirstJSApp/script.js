@@ -171,17 +171,34 @@
 
 // greeting(myName);
 
-function print(variable) {
-    let c = 3;
-    return function func(variable2) {
-        console.log(variable);
-        console.log(variable2);
-        console.log(c);
-    }
-}
+// function print(variable) {
+//     let c = 3;
+//     return function func(variable2) {
+//         console.log(variable);
+//         console.log(variable2);
+//         console.log(c);
+//     }
+// }
 
-let a = print(1);
-a(2);
+// let a = print(1);
+// a(2);
+
+// function greeting(name) {
+//     let name2 = "Xinzi";
+//     return function func(name3) {
+//         console.log("Hello " + name + ", " + name2 + ", and " + name3);
+//     }
+// }
+
+// let result = greeting("Michael");
+// result("Aaron");
+
+let a = 1;
+const b = 2;
+
+a = 2;
+
+console.log(a);
 
 
 
