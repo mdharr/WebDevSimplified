@@ -525,12 +525,59 @@
 
 // console.log(person);
 
-let book = {
-    title: "Swords and Deviltry",
-    author: {
-        name: "Fritz Leiber",
-        age: "Deceased"
-    }
-}
+// let book = {
+//     title: "Swords and Deviltry",
+//     author: {
+//         name: "Fritz Leiber",
+//         age: "Deceased"
+//     }
+// }
 
-console.log(`The title of the book I chose is ${ book.title }, which was written by ${book.author.name}. The author is ${ book.author.age === 'Deceased' ? 'deceased.' : book.author.age + ' years old.' }`);
+// console.log(`The title of the book I chose is ${ book.title }, which was written by ${book.author.name}. The author is ${ book.author.age === 'Deceased' ? 'deceased.' : book.author.age + ' years old.' }`);
+
+// let a = 10;
+// let b = "Hi";
+// let c = { name: "Michael" };
+// let d = c;
+// d.name = "Aaron"
+
+// console.log("a = " + JSON.stringify(a));
+// console.log("b = " + JSON.stringify(b));
+// console.log("c = " + JSON.stringify(c));
+// console.log("d = " + JSON.stringify(d));
+
+// const only cares if you are trying to change the
+// location where an object lives in memory, not
+// the values inside of the array. As long as you do
+// not try and redefine the array using the =
+// operator, the address/location of the array 
+// object in memory does not change
+// const a = [1, 2]; // 0x01
+// const b = [1, 2]; // 0x02
+// a.push(3);
+
+// equates to false because the values being compared
+// are the address/location where each array object
+// lives in memory
+// console.log(a === b);
+// console.log(a);
+// console.log(b);
+
+const a = [1, 2];
+const elementToAdd = 3;
+
+add(a, elementToAdd);
+
+console.log(a);
+console.log(elementToAdd);
+
+function add(array, element) {
+    // element is just a copy of the number
+    // while array is a reference to an actual object
+    // stored in memory, that is why the elementToAdd
+    // value does not change when the function is
+    // called, but the array is, because a is a
+    // reference to a location.
+    element = element + 1;
+    array.push(element);
+}
