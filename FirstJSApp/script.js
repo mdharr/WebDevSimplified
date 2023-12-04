@@ -450,7 +450,8 @@
 // const duration = endTime - startTime;
 // console.log("Time Taken (in milliseconds): ", duration);
 
-const a = 1;
-const b = "1";
+const a = parseInt("asdfasdf");
+const b = 1;
 
-console.log(a == b);
+console.log(a);
+console.log(isNaN(a));
