@@ -563,21 +563,116 @@
 // console.log(a);
 // console.log(b);
 
-const a = [1, 2];
-const elementToAdd = 3;
+// const a = [1, 2];
+// const elementToAdd = 3;
 
-add(a, elementToAdd);
+// add(a, elementToAdd);
 
-console.log(a);
-console.log(elementToAdd);
+// console.log(a);
+// console.log(elementToAdd);
 
-function add(array, element) {
-    // element is just a copy of the number
-    // while array is a reference to an actual object
-    // stored in memory, that is why the elementToAdd
-    // value does not change when the function is
-    // called, but the array is, because a is a
-    // reference to a location.
-    element = element + 1;
-    array.push(element);
-}
+// function add(array, element) {
+//     // element is just a copy of the number
+//     // while array is a reference to an actual object
+//     // stored in memory, that is why the elementToAdd
+//     // value does not change when the function is
+//     // called, but the array is, because a is a
+//     // reference to a location.
+//     element = element + 1;
+//     array.push(element);
+// }
+
+// const a = [1, 2, 3, 4, 5];
+// const b = [1, 2];
+
+// forEach (index parameter is optional)
+// loops through all elements and do what you want
+// does not return anything
+// a.forEach((item, index) => {
+//     console.log(`Item: ${item}, Index: ${index}`);
+// });
+
+// map
+// creates and returns a new array 
+// (does not modify original)
+// const newA = a.map(item => {
+//     return item * 2;
+// });
+
+// console.log(newA);
+
+// filter loops through all elements and filter
+// down list into a new list of elements that we want
+// does not modify original
+// const newA = a.filter(item => {
+//     return item > 2;
+// });
+
+// console.log(newA);
+
+// returns first single element that returns true
+// based on requirements
+// const n = a.find(item => {
+//     return item > 2;
+// });
+
+// console.log(n);
+
+// do some elements match the equation?
+// const isTrue = a.some(item => {
+//     return item > 8;
+// });
+
+// console.log(isTrue);
+
+// does every element match the equation?
+// const isTrue = a.every(item => {
+//     return item > 0;
+// });
+
+// console.log(isTrue);
+
+// Reduces array down to a single value or object
+// based on the requirements. The first parameter
+// is what holds the values throughout the operation
+// also known as the accumulator. The second param
+// refers to each element in the array. Do not forget
+// to initialize the accumulator after the closing
+// curly brace.
+// const total = a.reduce((sum, number) => {
+//     return sum + number;
+// }, 0);
+
+// console.log(total);
+
+// const items = [
+//     { price: 10 },
+//     { price: 20 },
+//     { price: 14 },
+//     { price: 1 },
+//     { price: 6 }
+// ];
+
+// const total = items.reduce((sum, item) => {
+//     return sum + item.price;
+// }, 0);
+
+// console.log(total);
+
+// const a = [1, 2, 3, 4, 5];
+
+// const isTrue = a.includes(2);
+
+// console.log(isTrue);
+
+// sort modifies the original, so you must use spread
+// operator inside of square brackets in order to
+// make copy of original if you do not wish for the
+// original to be sorted as well
+// let sortedA = [...a].sort((a, b) => {
+//     return b - a;
+// });
+
+// console.log(a);
+// console.log(sortedA);
+
