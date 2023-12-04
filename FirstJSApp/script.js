@@ -676,3 +676,12 @@
 // console.log(a);
 // console.log(sortedA);
 
+// let a = "Hello";
+// let b = "World"
+
+// console.log(`${a} ${b}`);
+
+// let firstName = "Michael";
+// let lastName = "Harrington";
+
+// console.log(`${firstName} ${lastName}`);
