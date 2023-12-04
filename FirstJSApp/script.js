@@ -450,8 +450,35 @@
 // const duration = endTime - startTime;
 // console.log("Time Taken (in milliseconds): ", duration);
 
-const a = parseInt("asdfasdf");
-const b = 1;
+// const a = parseInt("asdfasdf");
+// const b = 1;
 
-console.log(a);
-console.log(isNaN(a));
+// console.log(a);
+// console.log(isNaN(a));
+
+// const a = [
+//     ["hi", "bye"],
+//     [1, 2]
+// ]
+
+// console.log(a);
+// console.log(a[0]);
+// console.log(a[0][0]);
+
+// const a = ["a", "b", "c", "d", "e"];
+
+// let middle = a.length / 2;
+// let leftHalf = a.slice(0, middle);
+// let rightHalf = a.slice(middle);
+// let middleElement = rightHalf[0];
+// console.log("The midpoint should be: ", middleElement);
+
+const a = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15]
+];
+
+console.log(a[0][3]);
+console.log(a[1][2]);
+console.log(a[2][0]);
