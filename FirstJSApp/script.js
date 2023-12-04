@@ -390,62 +390,67 @@
 // console.log("Time Taken (in milliseconds) to Gen Nums: ", sortDuration);
 
 // generate numbers function
-function generateNumbers(n) {
-    let numsArray = [];
-    for (let i = 0; i < n; i++) {
-        numsArray[i] = parseInt(Math.random() * n);
-    }
-    return numsArray;
-}
+// function generateNumbers(n) {
+//     let numsArray = [];
+//     for (let i = 0; i < n; i++) {
+//         numsArray[i] = parseInt(Math.random() * n);
+//     }
+//     return numsArray;
+// }
 
-// merge sort logic
-function mergeSort(arr) {
-    if (arr.length <= 1) {
-        return arr;
-    }
+// // merge sort logic
+// function mergeSort(arr) {
+//     if (arr.length <= 1) {
+//         return arr;
+//     }
 
-    // Divide the array in half
-    const middle = Math.floor(arr.length / 2);
-    const left = arr.slice(0, middle);
-    const right = arr.slice(middle);
+//     // Divide the array in half
+//     const middle = Math.floor(arr.length / 2);
+//     const left = arr.slice(0, middle);
+//     const right = arr.slice(middle);
 
-    // Use recursion to combine the left and right
-    return merge(mergeSort(left), mergeSort(right));
-}
+//     // Use recursion to combine the left and right
+//     return merge(mergeSort(left), mergeSort(right));
+// }
 
-// Merge two sorted arrays
-function merge(left, right) {
-    let resultArray = [], leftIndex = 0, rightIndex = 0;
+// // Merge two sorted arrays
+// function merge(left, right) {
+//     let resultArray = [], leftIndex = 0, rightIndex = 0;
 
-    // Concatenate values into resultArray in order
-    while (leftIndex < left.length && rightIndex < right.length) {
-        if (left[leftIndex] < right[rightIndex]) {
-            resultArray.push(left[leftIndex]);
-            leftIndex++; // move left array cursor
-        } else {
-            resultArray.push(right[rightIndex]);
-            rightIndex++; // move right array cursor
-        }
-    }
+//     // Concatenate values into resultArray in order
+//     while (leftIndex < left.length && rightIndex < right.length) {
+//         if (left[leftIndex] < right[rightIndex]) {
+//             resultArray.push(left[leftIndex]);
+//             leftIndex++; // move left array cursor
+//         } else {
+//             resultArray.push(right[rightIndex]);
+//             rightIndex++; // move right array cursor
+//         }
+//     }
 
-    // Concatenate remaining elements
-    // (if left/right array still has elements)
-    return resultArray
-            .concat(left.slice(leftIndex))
-            .concat(right.slice(rightIndex));
-}
+//     // Concatenate remaining elements
+//     // (if left/right array still has elements)
+//     return resultArray
+//             .concat(left.slice(leftIndex))
+//             .concat(right.slice(rightIndex));
+// }
 
-const startTime = Date.now();
-console.log("Starting Time: ", startTime);
+// const startTime = Date.now();
+// console.log("Starting Time: ", startTime);
 
-let generatedNumbers = generateNumbers(100000);
-console.log("Numbers Result: ", generatedNumbers);
-let sortedNumbers = mergeSort(generatedNumbers);
-// let sortedNumbers = generatedNumbers.sort((a,b) => a - b);
-console.log("Sorted Results: ", sortedNumbers);
+// let generatedNumbers = generateNumbers(100000);
+// console.log("Numbers Result: ", generatedNumbers);
+// let sortedNumbers = mergeSort(generatedNumbers);
+// // let sortedNumbers = generatedNumbers.sort((a,b) => a - b);
+// console.log("Sorted Results: ", sortedNumbers);
 
-const endTime = Date.now();
-console.log("Ending Time: ", endTime);
+// const endTime = Date.now();
+// console.log("Ending Time: ", endTime);
 
-const duration = endTime - startTime;
-console.log("Time Taken (in milliseconds): ", duration);
+// const duration = endTime - startTime;
+// console.log("Time Taken (in milliseconds): ", duration);
+
+const a = 1;
+const b = "1";
+
+console.log(a == b);
