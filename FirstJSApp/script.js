@@ -473,12 +473,64 @@
 // let middleElement = rightHalf[0];
 // console.log("The midpoint should be: ", middleElement);
 
-const a = [
-    [1, 2, 3, 4, 5],
-    [6, 7, 8, 9, 10],
-    [11, 12, 13, 14, 15]
-];
+// const a = [
+//     [1, 2, 3, 4, 5],
+//     [6, 7, 8, 9, 10],
+//     [11, 12, 13, 14, 15]
+// ];
 
-console.log(a[0][3]);
-console.log(a[1][2]);
-console.log(a[2][0]);
+// console.log(a[0][3]);
+// console.log(a[1][2]);
+// console.log(a[2][0]);
+
+// let person = { 
+//     name: "Michael", 
+//     age: 35, 
+//     favoriteNumber: 53,
+//     sayHi: function () {
+//         console.log(person.name + " says hi!");
+//     },
+//     sayHi2() {
+//         console.log(person.name + " says hello!");
+//     },
+//     property: "value"
+// }
+
+// console.log(person);
+// console.log(person.name);
+// person.sayHi();
+// person.sayHi2();
+
+// let car = {
+//     make: "Chevrolet",
+//     model: "Corvette",
+//     isUsed: true,
+//     makeNoise() {
+//         return "Vroooooom!";
+//     }
+// }
+
+// console.log(car["make"]);
+
+// console.log(car.make + " " + car.model + "s are very fun to drive. Especially if they are " + `${car.isUsed ? 'used' : 'new'}. ` + "I love the " + car.makeNoise() + " sound they make when you go fast.");
+
+// let person = {
+//     name: "Michael",
+//     hobbies: ["Gaming", "Programming"],
+//     address: {
+//         street: "12345 Main Street",
+//         city: "Somewhere"
+//     }
+// }
+
+// console.log(person);
+
+let book = {
+    title: "Swords and Deviltry",
+    author: {
+        name: "Fritz Leiber",
+        age: "Deceased"
+    }
+}
+
+console.log(`The title of the book I chose is ${ book.title }, which was written by ${book.author.name}. The author is ${ book.author.age === 'Deceased' ? 'deceased.' : book.author.age + ' years old.' }`);
