@@ -782,16 +782,30 @@
 // });
 
 // window.addEventListener('resize', () => console.log("resize"));
-const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-button.addEventListener('click', e => {
-    console.log("Arrow This");
-    console.log(this);
+// button.addEventListener('click', e => {
+//     console.log("Arrow This");
+//     console.log(this);
+// });
+
+// button.addEventListener('click', function(e) {
+//     console.log("Function This");
+//     console.log(this);
+// });
+
+// console.log(this === window);
+// const test = document.querySelector('[data-test]');
+
+// console.log(test.dataset.test);
+// console.log(test.dataset.testTwo);
+// test.dataset.test = '5555';
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const currentClicks = parseInt(button.dataset.clicks);
+
+        button.dataset.clicks = currentClicks + 1;
+    });
 });
-
-button.addEventListener('click', function(e) {
-    console.log("Function This");
-    console.log(this);
-});
-
-console.log(this === window);
