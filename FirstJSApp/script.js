@@ -720,5 +720,16 @@
 
 // almost always use defer when loading script tags
 // put script tags in the head
-console.log("Hi");
-console.log(window);
+// console.log("Hi");
+// console.log(window);
+// console.log(document);
+// let paragraphs = document.querySelectorAll('p');
+// paragraphs.forEach(p => {
+//     p.addEventListener('click', () => {
+//         console.log('World!');
+//     });
+// });
+// console.log(document.documentElement);
+const element = document.createElement('span');
+element.innerText = 'Hello World';
+document.body.appendChild(element);
