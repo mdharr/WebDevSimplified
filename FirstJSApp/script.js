@@ -734,15 +734,27 @@
 // element.innerText = 'Hello World';
 // document.body.appendChild(element);
 
-const divWithId = document.getElementById("div-id");
-divWithId.style.color = 'red';
+// const divWithId = document.getElementById("div-id");
+// divWithId.style.color = 'red';
 
 // getElementsByClassName naturally returns an HTMLCollection, which
 // does not have access to array methods, so you must convert
 // it to an array using spread operator or Array.from
-const divsWithClass = [...document.getElementsByClassName('div-class')];
+// const divsWithClass = [...document.getElementsByClassName('div-class')];
 // I use the spread operator above to convert node list? to an array,
 // but you can also convert to an array using the Array.from() as seen below
 // const divsWithClassArray = Array.from(divsWithClass);
 
-divsWithClass.forEach(div => div.style.color = 'green');
+// divsWithClass.forEach(div => div.style.color = 'green');
+
+const dataAttributeElement = document.querySelector('[data-test]');
+const divsWithClasses = document.querySelectorAll('.div-class');
+const input = document.querySelector("input");
+
+dataAttributeElement.style.color = 'green';
+divsWithClasses.forEach(div => div.style.color = "red");
+
+console.log(dataAttributeElement);
+console.log(divsWithClasses);
+console.log(input);
+
