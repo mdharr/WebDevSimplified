@@ -747,14 +747,38 @@
 
 // divsWithClass.forEach(div => div.style.color = 'green');
 
-const dataAttributeElement = document.querySelector('[data-test]');
-const divsWithClasses = document.querySelectorAll('.div-class');
-const input = document.querySelector("input");
+// const dataAttributeElement = document.querySelector('[data-test]');
+// const divsWithClasses = document.querySelectorAll('.div-class');
+// const input = document.querySelector("input");
 
-dataAttributeElement.style.color = 'green';
-divsWithClasses.forEach(div => div.style.color = "red");
+// dataAttributeElement.style.color = 'green';
+// divsWithClasses.forEach(div => div.style.color = "red");
 
-console.log(dataAttributeElement);
-console.log(divsWithClasses);
-console.log(input);
+// console.log(dataAttributeElement);
+// console.log(divsWithClasses);
+// console.log(input);
 
+// const btn = document.querySelector('[data-btn]');
+// const input = document.querySelector('[data-input-text]');
+// const form = document.querySelector('[data-form]');
+
+// input.addEventListener('input', e => {
+//     console.log(e.target.value === '');
+// });
+
+// btn.addEventListener('click', e => {
+//     console.log(e);
+// });
+
+// form.addEventListener('submit', e => {
+//     e.preventDefault();
+//     console.log('submitted form');
+// });
+
+// const linkElement = document.querySelector('[data-link]');
+// linkElement.addEventListener('', e => {
+//     e.preventDefault();
+//     console.log('clicked link');
+// });
+
+// window.addEventListener('resize', () => console.log("resize"));
