@@ -686,9 +686,9 @@
 
 // console.log(`${firstName} ${lastName}`);
 
-function createUser(name, age) {
-    return { name: name, age: age }
-}
+// function createUser(name, age) {
+//     return { name: name, age: age }
+// }
 
 // const user = createUser("Michael", 35);
 // console.log(user);
@@ -701,19 +701,22 @@ function createUser(name, age) {
 //     this.human = true;
 // }
 
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-        this.human = true;
-    }
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//         this.human = true;
+//     }
 
-    printName() {
-        console.log(this.name);
-    }
-}
+//     printName() {
+//         console.log(this.name);
+//     }
+// }
 
-const user = new User("Michael", 35);
-const userFunc = createUser("Aaron", 10);
-user.printName();
-console.log(userFunc);
+// const user = new User("Michael", 35);
+// const userFunc = createUser("Aaron", 10);
+// user.printName();
+// console.log(userFunc);
+
+// almost always use defer when loading script tags
+// put script tags in the head
