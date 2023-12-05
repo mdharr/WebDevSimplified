@@ -782,3 +782,16 @@
 // });
 
 // window.addEventListener('resize', () => console.log("resize"));
+const button = document.querySelector('button');
+
+button.addEventListener('click', e => {
+    console.log("Arrow This");
+    console.log(this);
+});
+
+button.addEventListener('click', function(e) {
+    console.log("Function This");
+    console.log(this);
+});
+
+console.log(this === window);
