@@ -5,27 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div {
-            color: black;
-        }
-        div > div {
-            margin-left: .5rem;
-            padding-left: .25rem;
-            border-left: 1px solid #777;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-    <div id="grand-parent">
-        Grand Parent
-        <div class="red">
-            Parent 1
-            <div class="child">Child 1</div>
-            <div class="child">Child 2</div>
-        </div>
-        <div>Parent 2</div>
+<body>    
+    <form id="new-item-form">
+      <label for="item-input">New Item</label>
+      <input type="text" id="item-input">
+      <button type="submit">Add Item</button>
+    </form>
+    <div id="list">
+
     </div>
 </body>
 </html>
