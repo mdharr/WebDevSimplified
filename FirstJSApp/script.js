@@ -730,6 +730,19 @@
 //     });
 // });
 // console.log(document.documentElement);
-const element = document.createElement('span');
-element.innerText = 'Hello World';
-document.body.appendChild(element);
+// const element = document.createElement('span');
+// element.innerText = 'Hello World';
+// document.body.appendChild(element);
+
+const divWithId = document.getElementById("div-id");
+divWithId.style.color = 'red';
+
+// getElementsByClassName naturally returns an HTMLCollection, which
+// does not have access to array methods, so you must convert
+// it to an array using spread operator or Array.from
+const divsWithClass = [...document.getElementsByClassName('div-class')];
+// I use the spread operator above to convert node list? to an array,
+// but you can also convert to an array using the Array.from() as seen below
+// const divsWithClassArray = Array.from(divsWithClass);
+
+divsWithClass.forEach(div => div.style.color = 'green');
