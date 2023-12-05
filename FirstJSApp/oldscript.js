@@ -801,11 +801,11 @@
 // console.log(test.dataset.testTwo);
 // test.dataset.test = '5555';
 
-const buttons = document.querySelectorAll('button');
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const currentClicks = parseInt(button.dataset.clicks);
+// const buttons = document.querySelectorAll('button');
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const currentClicks = parseInt(button.dataset.clicks);
 
-        button.dataset.clicks = currentClicks + 1;
-    });
-});
+//         button.dataset.clicks = currentClicks + 1;
+//     });
+// });
