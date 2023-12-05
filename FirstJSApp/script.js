@@ -720,3 +720,5 @@
 
 // almost always use defer when loading script tags
 // put script tags in the head
+console.log("Hi");
+console.log(window);
