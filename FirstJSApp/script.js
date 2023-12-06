@@ -40,10 +40,47 @@
 //     console.log("large")
 // }
 
-const isUserLoggedIn = true;
+// const isUserLoggedIn = true;
 
-const welcomeMessage = isUserLoggedIn ?
-                       'welcome' :
-                       'please log in'
+// const welcomeMessage = isUserLoggedIn ?
+//                        'welcome' :
+//                        'please log in'
 
-console.log(welcomeMessage);
+// console.log(welcomeMessage);
+
+// const favoriteAnimal = 'shark';
+
+// switch (favoriteAnimal) {
+//     case "cat":
+//         console.log("cats are pretty cool")
+//         break
+//     case "dog":
+//         console.log("dogs are cool too")
+//         break
+//     case "shark":
+//         console.log("interesting choice")
+//         break
+//     default :
+//         console.log("unfamiliar with that one")
+// }
+
+const number = 5;
+
+switch(number) {
+    case 0:
+        console.log("it is zero")
+        break
+    case 1:
+    case 2:
+        console.log("it is small")
+        break
+    case 3:
+    case 4:
+        console.log("it is medium")
+        break
+    case 5:
+        console.log("it is large")
+        break
+    default:
+        console.log("try again")
+}
