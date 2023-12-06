@@ -64,23 +64,48 @@
 //         console.log("unfamiliar with that one")
 // }
 
-const number = 5;
+// const number = 5;
 
-switch(number) {
-    case 0:
-        console.log("it is zero")
-        break
-    case 1:
-    case 2:
-        console.log("it is small")
-        break
-    case 3:
-    case 4:
-        console.log("it is medium")
-        break
-    case 5:
-        console.log("it is large")
-        break
-    default:
-        console.log("try again")
+// switch(number) {
+//     case 0:
+//         console.log("it is zero")
+//         break
+//     case 1:
+//     case 2:
+//         console.log("it is small")
+//         break
+//     case 3:
+//     case 4:
+//         console.log("it is medium")
+//         break
+//     case 5:
+//         console.log("it is large")
+//         break
+//     default:
+//         console.log("try again")
+// }
+// const a = [['a', 'b'], ['b', 'c'], ['c', 'd']]
+
+// for(let i = 0; i < a.length; i++) {
+//     for(let j = 0; j < a[i].length; j++) {
+//         console.log(a[i][j])
+//     }
+// }
+
+// const a = [[['a', 'b'], ['c', 'd']], [['e', 'f'], ['g', 'h']], [['i', 'j'], ['k', 'l']]];
+
+// for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < a[i].length; j++) {
+//         for (let k = 0; k < a[i][j].length; k++) {
+//             console.log(a[i][j][k]);
+//         }
+//     }
+// }
+
+// const aFlat = a.flat(2);
+// console.log(aFlat);
+
+for(let i = 0; i <= 10; i++) {
+    if(i === 5) break
+    console.log(i);
 }
