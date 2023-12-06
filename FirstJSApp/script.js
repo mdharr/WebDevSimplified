@@ -105,7 +105,33 @@
 // const aFlat = a.flat(2);
 // console.log(aFlat);
 
-for(let i = 0; i <= 10; i++) {
-    if(i === 5) break
-    console.log(i);
+// for(let i = 0; i <= 10; i++) {
+//     if(i === 5) break
+//     console.log(i);
+// }
+
+// for(let i = 0; i < 5; i++) {
+//     console.log(i);
+// }
+
+// let i = 0;
+// while(i < 5) {
+//     console.log(i);
+//     i++;
+// }
+
+const person = {
+    name: "Michael",
+    friend: {
+        name: 'Aaron',
+        friend: {
+            name: 'Mom'
+        }
+    }
+}
+
+let currentPerson = person;
+while(currentPerson.friend != null) {
+    console.log(currentPerson.name)
+    currentPerson = currentPerson.friend
 }
