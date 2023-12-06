@@ -120,18 +120,67 @@
 //     i++;
 // }
 
+// const person = {
+//     name: "Michael",
+//     friend: {
+//         name: 'Aaron',
+//         friend: {
+//             name: 'Mom'
+//         }
+//     }
+// }
+
+// let currentPerson = person;
+// while(currentPerson.friend != null) {
+//     console.log(currentPerson.name)
+//     currentPerson = currentPerson.friend
+// }
+
+// let sum = 0;
+// for (let i = 1; i <= 10; i++) {
+//     sum = sum + i
+// }
+
+// console.log(sum)
+
+
+// function printNumber(n) {
+//     if(n > 10) return
+//     console.log(n);
+//     printNumber(n + 1)
+//     console.log(n)
+// }
+
+// printNumber(1)
+
+// function sumNumbersBelow(number) {
+//     if(number <= 0) return 0
+//     return number + sumNumbersBelow(number - 1)
+// }
+    
+// console.log(sumNumbersBelow(3))
+
 const person = {
     name: "Michael",
     friend: {
-        name: 'Aaron',
+        name: "Aaron",
         friend: {
-            name: 'Mom'
+            name: "Mom"
         }
     }
 }
 
-let currentPerson = person;
-while(currentPerson.friend != null) {
+let currentPerson = person
+// while(currentPerson != null) {
+//     console.log(currentPerson.name)
+//     currentPerson = currentPerson.friend
+// }
+
+function printNames(currentPerson) {
+    if(currentPerson == null) return
     console.log(currentPerson.name)
-    currentPerson = currentPerson.friend
+    printNames(currentPerson.friend)
+    console.log("exiting from: " + currentPerson.name)
 }
+
+printNames(currentPerson)
