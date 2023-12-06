@@ -1,30 +1,41 @@
-//   TODO: 2. Select the elements with the following IDs
-//     * modal
-//     * open-modal-btn
-//     * close-modal-btn
-//     * BONUS: overlay
-const modal = document.querySelector('#modal');
-const openModalBtn = document.querySelector('#open-modal-btn');
-const closeModalBtn = document.querySelector('#close-modal-btn');
-const overlay = document.querySelector('#overlay');
+// const userIsLoggedIn = false;
 
-// TODO: 3. Create a click event listener for the open-modal-btn that adds the class "open" to the modal
-// BONUS: Also add the class "open" to the overlay
-openModalBtn.addEventListener('click', openModal);
+// if(userIsLoggedIn) {
+//     console.log("User logged in")   
+// } 
+// else {
+//     console.log("Please login")
+// }
 
-// TODO: 4. Create a click event listener for the close-modal-btn that removes the class "open" from the modal
-// BONUS: Also remove the class "open" from the overlay
-closeModalBtn.addEventListener('click', closeModal);
+// const dayOfWeek = new Date().getDay() === 0 ? 'Sunday' :
+//                   new Date().getDay() === 1 ? 'Monday' :
+//                   new Date().getDay() === 2 ? 'Tuesday' :
+//                   new Date().getDay() === 3 ? 'Wednesday' :
+//                   new Date().getDay() === 4 ? 'Thursday' :
+//                   new Date().getDay() === 5 ? 'Friday' :
+//                   'Saturday'
 
-// BONUS: Add a click event listener to the overlay that removes the class "open" from the modal and the overlay
-overlay.addEventListener('click', closeModal);
+// if(dayOfWeek === 'Tuesday') {
+//  console.log('It is Tuesday!')
+// } else {
+//     console.log(`It is not Tuesday, it is ${ dayOfWeek }`);
+// }
 
-function closeModal() {
-    modal.classList.remove('open');
-    overlay.classList.remove('open');
-}
+// Create a variable that contains an array.
+// Using an if statement with else if I want you to check the length
+// of the array
+// If it is empty print out "empty"
+// If it has less than 5 elements print out "small"
+// If it has less than 10 elements print out "medium"
+// Otherwise print out "large"
+const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-function openModal() {
-    modal.classList.add('open');
-    overlay.classList.add('open');
+if(myArray.length === 0) {
+    console.log("empty")
+} else if(myArray.length < 5) {
+    console.log("small")
+} else if (myArray.length < 10) {
+    console.log("medium")
+} else {
+    console.log("large")
 }
