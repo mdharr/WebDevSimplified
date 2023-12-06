@@ -28,14 +28,22 @@
 // If it has less than 5 elements print out "small"
 // If it has less than 10 elements print out "medium"
 // Otherwise print out "large"
-const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-if(myArray.length === 0) {
-    console.log("empty")
-} else if(myArray.length < 5) {
-    console.log("small")
-} else if (myArray.length < 10) {
-    console.log("medium")
-} else {
-    console.log("large")
-}
+// if(myArray.length === 0) {
+//     console.log("empty")
+// } else if(myArray.length < 5) {
+//     console.log("small")
+// } else if (myArray.length < 10) {
+//     console.log("medium")
+// } else {
+//     console.log("large")
+// }
+
+const isUserLoggedIn = true;
+
+const welcomeMessage = isUserLoggedIn ?
+                       'welcome' :
+                       'please log in'
+
+console.log(welcomeMessage);
