@@ -160,27 +160,81 @@
     
 // console.log(sumNumbersBelow(3))
 
+// const person = {
+//     name: "Michael",
+//     friend: {
+//         name: "Aaron",
+//         friend: {
+//             name: "Mom"
+//         }
+//     }
+// }
+
+// let currentPerson = person
+// // while(currentPerson != null) {
+// //     console.log(currentPerson.name)
+// //     currentPerson = currentPerson.friend
+// // }
+
+// function printNames(currentPerson) {
+//     if(currentPerson == null) return
+//     console.log(currentPerson.name)
+//     printNames(currentPerson.friend)
+//     console.log("exiting from: " + currentPerson.name)
+// }
+
+// printNames(currentPerson)
+
+
+// const person = {
+//     name: "Kyle",
+//     friend: {
+//         name: "Joe",
+//         friend: {
+//             name: "Sally"
+//         }
+//     }
+// }
+
+// let currentPerson = person
+
+// function printNames(currentPerson) {
+//     if (currentPerson == null) return
+//     console.log(currentPerson.name)
+//     console.log('call recursion')
+//     if (currentPerson.friend == null) console.log('no next person')
+//     printNames(currentPerson.friend)
+//     console.log('exiting ' + currentPerson.name)
+//     currentPerson.recorded = true
+// }
+  
+// printNames(person)
+// console.log('Outside of function')
+
+// printTrue() || printFalse();
+
+// function printTrue() {
+//     console.log("true")
+//     return true;
+// }
+
+// function printFalse() {
+//     console.log("false")
+//     return false;
+// }
+
+// function printName(name) {
+//     name = name || 'Default'
+//     console.log(name)
+// }
+
+// printName()
+
 const person = {
     name: "Michael",
-    friend: {
-        name: "Aaron",
-        friend: {
-            name: "Mom"
-        }
+    address: {
+        street: "Main Street"
     }
 }
 
-let currentPerson = person
-// while(currentPerson != null) {
-//     console.log(currentPerson.name)
-//     currentPerson = currentPerson.friend
-// }
-
-function printNames(currentPerson) {
-    if(currentPerson == null) return
-    console.log(currentPerson.name)
-    printNames(currentPerson.friend)
-    console.log("exiting from: " + currentPerson.name)
-}
-
-printNames(currentPerson)
+console.log(person && person.address && person.address.street)
