@@ -251,3 +251,79 @@
 // function addClickEventListener(element, callback) {
 //     element.addEventListener('click', callback)
 // }
+
+// const promise = new Promise((resolve, reject) => {
+//     const sum = 1 + 1
+
+//     if (sum === 2) {
+//         resolve('Success')
+//     } else {
+//         reject('Error')
+//     }
+// })
+
+// promise.then(message => {
+//     console.log(message)
+// }).catch(message => {
+//     console.error(message)
+// })
+
+// setTimeout(() => {
+//     console.log('here')
+// }, 250)
+
+// setTimeoutPromise(250).then(() => {
+//     console.log("1")
+//     return setTimeoutPromise(250)
+// })
+// .then(() => {
+//     console.log("2")
+//     return setTimeoutPromise(500)
+// })
+// .then(() => {
+//     console.log("3")
+// })
+
+// function setTimeoutPromise(duration) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(resolve, duration)
+//     })
+// }
+
+// Create a promise version of addEventListener
+
+// const button = document.querySelector('button')
+
+// function addEventListenerPromise(element, method) {
+//     return new Promise((resolve, reject) => {
+//         element.addEventListener(method, resolve)
+//     })
+// }
+
+// addEventListenerPromise(button, 'click').then(e => {
+//     console.log('clicked')
+//     console.log(e)
+// })
+
+// Promise.allSettled([
+//     Promise.resolve('1'),
+//     Promise.reject('Error on 2'),
+//     Promise.resolve('3'),
+// ]).then(messages => {
+//     console.log(messages)
+// }).catch(error => {
+//     console.error(error)
+// })
+
+const promise = Promise.resolve("here")
+
+promise
+    .then(message => {
+        console.log(message)
+    })
+    .catch(error => {
+        console.error(error)
+    })
+    .finally(() => {
+        console.log("finally")
+    })
