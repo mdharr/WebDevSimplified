@@ -230,11 +230,24 @@
 
 // printName()
 
-const person = {
-    name: "Michael",
-    address: {
-        street: "Main Street"
-    }
-}
+// const person = {
+//     name: "Michael",
+//     address: {
+//         street: "Main Street"
+//     }
+// }
 
-console.log(person && person.address && person.address.street)
+// console.log(person && person.address && person.address.street)
+// setTimeout(() => {
+//     console.log("inside")
+// }, 1000)
+
+// console.log("outside")
+// const button = document.querySelector('button')
+// addClickEventListener(button, () => {
+//     console.log('clicked')
+// })
+
+// function addClickEventListener(element, callback) {
+//     element.addEventListener('click', callback)
+// }
