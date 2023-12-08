@@ -479,3 +479,139 @@
 // function getRandom() {
 //     return parseInt(Math.random() * 826) + 1;
 // }
+
+
+// warmup
+// console.log('Program started')
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('Program complete');
+//     }, 3000);
+// })
+
+// console.log(myPromise)
+// console.log("Program in progress...")
+
+// myPromise.then((value) => {
+//     console.log(value)
+// })
+
+
+// exercise 1
+// console.log('Program started')
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve()
+//     }, 3000)
+
+//     setTimeout(() => {
+//         reject()
+//     }, 2000)
+// })
+
+// console.log(myPromise)
+// console.log("Program in progress...")
+
+// myPromise
+//     .then(() => {
+//         console.log("Program complete")
+//     })
+//     .catch(() => {
+//         console.log("Program failure")
+//     })
+
+// exercise 2
+// console.log("Program started")
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve()
+//     }, 3000)
+// })
+
+// console.log(myPromise)
+// console.log("Program in progress...")
+
+// myPromise.then(() => {
+//     console.log("Step 1 complete")
+
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Step 2 Complete')
+//         }, 3000)
+//     })
+// }).then((value) => {
+//     console.log(value)
+//     console.log(myPromise)
+// })
+
+// exercise 3
+// console.log("Program started")
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve({data: "Hello, friend!", error: null})
+//     }, 5000)
+// })
+
+// console.log(myPromise)
+// console.log("Program in progress...")
+
+// myPromise.then((value) => {
+//     console.log(value)
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("First promise chain complete!")
+//         }, 2000)
+//     })
+// }).then((value) => {
+//     console.log(value)
+// })
+
+// myPromise.then((value) => {
+//     console.log(value)
+//     console.log(myPromise)
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("Second promise chain complete!")
+//         }, 10000)
+//     })
+// }).then((value) => {
+//     console.log(value)
+// })
+
+// bonus
+console.log("Program started")
+const firstPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(10)
+    }, 3000)
+})
+console.log(firstPromise)
+
+const secondPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(20)
+    }, 5000)
+})
+console.log(secondPromise)
+console.log("Program in progress...")
+
+firstPromise.then(value => {
+    console.log("First promise chain complete!")
+    console.log(firstPromise)
+    return value
+})
+
+secondPromise.then(value => {
+    console.log("Second promise chain complete!")
+    console.log(secondPromise)
+    return value
+})
+
+Promise.all([firstPromise, secondPromise]).then((values) => {
+    console.log("All promise chains complete!")
+    const [firstResult, secondResult] = values
+    console.log("Sum:", (firstResult + secondResult))
+})
