@@ -315,15 +315,167 @@
 //     console.error(error)
 // })
 
-const promise = Promise.resolve("here")
+// const promise = Promise.resolve("here")
 
-promise
-    .then(message => {
-        console.log(message)
-    })
-    .catch(error => {
-        console.error(error)
-    })
-    .finally(() => {
-        console.log("finally")
-    })
+// promise
+//     .then(message => {
+//         console.log(message)
+//     })
+//     .catch(error => {
+//         console.error(error)
+//     })
+//     .finally(() => {
+//         console.log("finally")
+//     })
+
+// function setTimeoutPromise(delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(`You waited ${delay} milliseconds`)
+//         }, delay)
+//     })
+// }
+
+// setTimeoutPromise(250).then(message => {
+//     console.log(message)
+//     console.log("1")
+//     return setTimeoutPromise(250)
+// }).then(message => {
+//     console.log(message)
+//     console.log("2")
+// })
+
+// async function doStuff() {
+//     try {
+//         console.log('before error')
+//         const message = await setTimeoutPromise(250)
+//         console.log('after error')
+//         console.log(message)
+//         console.log("1")
+//         const message2 = await setTimeoutPromise(250)
+//         console.log(message2)
+//         console.log("2")
+//     } catch (error) {
+//         console.error(error)
+//     }
+
+// }
+
+// doStuff()
+
+
+
+// .then .catch version of fetch
+// function fetchUserData(userId) {
+//     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! status: ${response.status}`);
+//             }
+//             return response.json();
+//         })
+//         .then(userData => {
+//             console.log(userData);
+//             // Process userData here
+//             // For example, you can display user data in the HTML
+//         })
+//         .catch(error => {
+//             console.error('Error fetching user data:', error);
+//         });
+// }
+
+// document.getElementById('fetchButton').addEventListener('click', () => {
+//     const userId = document.getElementById('userIdInput').value;
+//     fetchUserData(userId);
+// });
+
+// async/await version of fetch
+// async function fetchUserData(userId) {
+//     try {
+//         const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+
+//         const userData = await response.json();
+//         console.log(userData);
+//         // Process userData here
+//         // For example, you can display user data in the HTML
+//     } catch (error) {
+//         console.error('Error fetching user data:', error);
+//     }
+// }
+
+// document.getElementById('fetchButton').addEventListener('click', () => {
+//     const userId = document.getElementById('userIdInput').value;
+//     fetchUserData(userId);
+// });
+// const characterInfoContainer = document.querySelector('#character-info')
+
+// async function fetchCharacterData() {
+//     try {
+//         const randomId = getRandom()
+//         const response = await fetch(`https://rickandmortyapi.com/api/character/${randomId}`);
+
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+
+//         const characterData = await response.json();
+//         console.log(characterData);
+//         showCharacterData(characterData)
+//         // Process userData here
+//         // For example, you can display user data in the HTML
+//     } catch (error) {
+//         console.error('Error fetching character data:', error);
+//     }
+// }
+
+// document.getElementById('fetchButton').addEventListener('click', () => {
+//     clearCharacterData()
+//     const characterId = document.getElementById('characterIdInput').value;
+//     fetchCharacterData(characterId);
+// });
+
+// document.getElementById('characterIdInput').addEventListener('keydown', function(event) {
+//     if (event.key === 'Enter') {
+//         clearCharacterData()
+//         const characterId = document.getElementById('characterIdInput').value;
+//         fetchCharacterData(characterId);
+//     }
+// });
+
+
+// function showCharacterData(data) {
+//     if(data != null) {
+//         const name = data.name
+//         const image = data.image
+//         const episodes = data.episode
+//         const nameElement = document.createElement('p')
+//         const imageElement = document.createElement('img')
+//         const episodesList = document.createElement('ul')
+//         nameElement.textContent = name
+//         imageElement.src = image
+//         characterInfoContainer.appendChild(nameElement)
+//         characterInfoContainer.appendChild(imageElement)
+//         // characterInfoContainer.appendChild(episodesList)
+//         // episodesList.style.listStyle = 'none'
+//         // episodesList.style.padding = 0
+//         // episodes.forEach(episode => {
+//         //     const episodeListItem = document.createElement('li')
+//         //     episodeListItem.textContent = episode.replace(/[^0-9]/g, '')
+//         //     episodesList.appendChild(episodeListItem)
+//         // })
+//     }
+// }
+
+// function clearCharacterData() {
+//     while(characterInfoContainer.firstChild) {
+//         characterInfoContainer.removeChild(characterInfoContainer.firstChild)
+//     }
+// }
+
+// function getRandom() {
+//     return parseInt(Math.random() * 826) + 1;
+// }
