@@ -613,5 +613,5 @@ secondPromise.then(value => {
 Promise.all([firstPromise, secondPromise]).then((values) => {
     console.log("All promise chains complete!")
     const [firstResult, secondResult] = values
-    console.log("Sum:", (firstResult + secondResult))
+    console.log("Sum of values:", (firstResult + secondResult))
 })
